@@ -814,7 +814,7 @@ format_in_frm1 = tk.Frame(format_in_frm0, pady=1)
 format_in_frm1.pack(fill=tk.X)
 format_in_text0 = tk.Label(format_in_frm1, text='in ('')', font=myfont3).pack()
 format_in_text = tk.Label(format_in_frm1,
-                          text="\n提示:\n1、将要对比的两个表放在同一个excel中的前两位；\n2、两个表的字段顺序要相同。\n",
+                          text="\n提示:\n1、选择.xlsx文件；\n2、按要求格式输入要获取的单元格范围。\n3、输出结果直接复制即可。\n",
                           font=myfont, justify='left').pack()
 fname_in = tk.StringVar()
 format_in_ent = tk.Entry(format_in_frm1,
@@ -902,6 +902,6 @@ wchat_camera_button.pack(fill=tk.X, expand=1, pady=3)
 """关于"""
 about_this_frm1 = tk.Frame(about_this_frm0)
 about_this_frm1.pack(fill='both', expand=1)
-about_this_lb = tk.Label(about_this_frm1, text="版本号：0.15\n\n作者：陈博文", font=myfont).pack(fill='both', expand=1)
+about_this_lb = tk.Label(about_this_frm1, text="版本号：0.16\n\n作者：陈博文\n\n邮箱：cbowen-yy@163.com\n\n帮助：https://github.com/18686622933/WorkSupport", font=myfont).pack(fill='both', expand=1)
 
 root.mainloop()
